@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+
+form { display:inline; }
+input,select { font-family:tahoma,arial,SimSun; }
+input[type="radio"]{margin-left: 10px;margin-right: 5px; }
+input[disabled],input:disabled{border: 1px solid #DDD;background-color: #F5F5F5;color:#ACA899;}
+//IE6 Using Javascript to add CSS class "disabled"
+* html input.disabled{border: 1px solid #DDD;background-color: #F5F5F5;color:#ACA899;}
+select{margin-right: 5px;}
+
+.checkbox { top:2px; *top:1px; }
+.text { padding:2px 0 1px 0; border:solid 1px #7f9db9; }
+.text.hover { border-color:#00e0a9; }
+.inputs{padding:2px;line-height:14px;font-size:13px;border:solid 1px #aaa;font-family:Arial, Helvetica, sans-serif;background:white;}
+.warning{border:solid 1px #e96440 !important;}
+	
+/*Matrix-opts*/	
+table.matrix-opts{width: 100%; }
+table.matrix-opts tbody tr th{padding: 2px 5px;border: none;color: #124D8B;text-align:center;}
+table.matrix-opts.with-border tbody tr th{border:solid 1px #EEEEEE;}
+table.matrix-opts.with-border tbody .even{background: none repeat scroll 0 0 #FFF;}
+table.matrix-opts.with-border tbody .odd{background: none repeat scroll 0 0 #EEE;}
+table.matrix-opts tbody tr td{padding: 2px 5px;border: none;}
+table.matrix-opts.with-border tbody tr td{border:solid 1px #EEEEEE;}
+table.matrix-opts tbody tr td label{ display:inline-block; zoom:1; *display: inline; margin-right: 5px; min-width: 120px; text-align: right;}
+table.matrix-opts tbody tr td span.value{ color: #124D8B;}
+
+/*Matrix-amount*/
+.matrix-amount{ display: inline-block; *display: inline; zoom: 1; background-color: #FFFFFF; text-align: center;}
+.matrix-amount>.reduce,.matrix-amount>.add { border: 1px solid #DBDBDB;display: inline-block;font-family: "Times New Roman";height: 13px;line-height: 13px;overflow: hidden;
+		text-align: center;text-decoration: none;width: 13px;  background-color: #FFFFFF;  vertical-align: middle;}
+.matrix-amount>.reduce:hover,.matrix-amount>.add:hover{ background: none repeat scroll 0 0 #4598D2;color: #FFFFFF;}
+.matrix-amount>input[type="text"]{width: 30px;  margin: 0 3px;}
+
+/*Form*/
+.required:before{ content:'*'; color: red; padding-right: 3px;}
+
+/*MultiText */
+#matrix-multiText { position: absolute; z-index: 100000; }
+#matrix-multiText>textarea { border: 1px solid #AAAAAA; font-family: Arial, Helvetica, sans-serif; font-size: 12px; height: 150px; line-height: 14px; padding: 2px; resize: none; }
+ 
+/*Matrix-select*/
+.matrix-select {position: relative;font-weight:normal; font-size: normal; margin: 5px 2px 0 2px; display: inline-block; *display: inline; zoom: 1; font: 12px/1.6 Tahoma,"宋体"; vertical-align: middle;}
+.matrix-select:hover ul { display: block; background-color: #FFFFFF;}
+.matrix-select:hover .selected {border-bottom: solid 1px #FFFFFF;}
+.matrix-select ul { position: absolute; left: 0;border: solid 1px #D4D4D4; text-align: left; background-color: #FFFFFF; min-width: 86px; max-height:280px;overflow-x:hidden;overflow-y:auto;display: none; }
+.matrix-select li a { display: block; height: 25px; line-height: 25px; padding: 3px 9px; text-decoration: none; white-space:nowrap;}
+.matrix-select li a:hover,.matrix-select li a.on { background-color: #517BAF; color: white; text-decoration: none; }
+.matrix-select .selected {border: solid 1px #D4D4D4; padding: 3px 22px 3px 3px; position: relative; top: 1px; background-color: #FFFFFF; text-align:center; cursor:pointer;}
+.matrix-select .selected .on{display:block;overflow:hidden;white-space:nowrap;}
+.matrix-select .selected  .i_triangle{position:absolute; right:3px;bottom:5px;}
+
+/*Date*/
+.datebox_arrow{position: absolute;top: -1px;*top: 3px;right:3px;width:16px;height:16px;background:url(../../images/virt_btn_public.png) no-repeat;background-position:-160px -16px;}
+
+/*Log*/
+.matrix-grid tbody td.log, .matrix-grid tbody td.msg, .matrix-grid tbody td.message{padding:1px 6px 1px 5px;}
+.matrix-grid tbody td.log .btn-button a, .matrix-grid tbody td.msg .btn-button a, .matrix-grid tbody td.message .btn-button a{font-weight:normal;}
+.textarea-log{width:750px;height:550px;overflow-y:auto;resize:none;outline:none;background:none repeat scroll 0 0 black;background-color: black;color: lime;font-size:13px;border:0;}
+.textarea-memo{width:134px;height:50px;overflow-y:auto;resize:none;outline:none;font-size:13px;border:solid 1px #aaa;font-family:Arial, Helvetica, sans-serif;}
